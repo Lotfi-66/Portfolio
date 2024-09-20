@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Futurama';
+    src: url('../fonts/Futurama bold.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Futurama', sans-serif;
+    color: #fff;
+    background-color: transparent;
+    line-height: 1.6;
+    overflow: hidden;
+    touch-action: pan-x pan-y;
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+.App-header {
+    position: fixed;
+    top: 350px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: left;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.App-header h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.App-header p {
+    font-size: 22px;
+    line-height: 1.9;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.tech-sphere-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-sphere {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1150px;
+}
+
+.tech-sphere .icon {
+    position: absolute;
+    font-size: 25px;
+    transition: transform 0.09s ease-out;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
